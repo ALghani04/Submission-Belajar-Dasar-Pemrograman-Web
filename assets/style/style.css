@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+/* ============== Header ================*/
+header{
+    padding: 20px;
+    text-align: right;
+    font-size: 20px;
+}
+
+header nav ul li {
+    display: inline;  
+}
+
+header nav ul li a {
+    font-family: 'Quicksand', sans-serif;
+    padding: 16px 32px;
+    color: #595959;
+    text-decoration: none;
+}
+
+nav a:hover{
+    font-weight: bold;
+}
+
+nav .first:hover{
+    color: #92A4D2;
+}
+
+nav .second:hover{
+    color: #90CDE0  ;
+}
+
+nav .third:hover{
+    color: #cdb1da ;
+}
+
+nav .fourth:hover{
+    color: #9b9fa8;
+}
+
+
+.contact h2, .about h2, .services h2{
+    padding: 100px 150px;
+    text-align: center;
+    font-size: 50px;
+}
+
+/* ============== Beranda ================*/
+
+
+main .beranda{
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    margin: 50px 100px 400px 100px;
+    padding: 100px 50px 100px 100px;
+    background-color: #F0F4FE;
+}
+ .BR1{
+     flex-grow: 1;
+ }
+
+.hello{
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.lutfhi{
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.fsd{
+    font-size: 45px;
+}
+
+.hello, .lutfhi, .fsd{
+    padding-left: 40px;
+}
+
+.featured-image {
+    width: 100%;
+    max-width: 300px;
+    object-fit: cover;
+    object-position: center;
+ }
+
+
+ /*================= About ====================*/
+.about{
+    margin: 100px 50px;
+    padding: 100px 70px;
+    background-image: url('../image/bgabout.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+
+}
+
+.justify{
+    text-align: justify;
+    padding:100px ;
+    font-size: 25px;
+}
+
+
+
+/*================= services ======================*/
+.services{
+    margin: 200px 50px;    
+}
+
+article div{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0px 130px;
+}
+
+article div figure{
+    flex-grow: 1;
+    height: 400px;
+    width: 200px;
+    margin: 20px;
+    border-radius: 30px;
+    transition: all 300ms ease-in-out;
+}
+
+article div figure img{
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: block;
+    width: 100%;
+    max-width: fit-content;
+}
+
+article div figure p{
+    font-size: 25px;
+    text-align: center;
+}
+
+.satu{
+    box-shadow:0px 0px 5px #92A4D2;
+    border: 5px #92A4D2;
+}
+.satu:hover{
+    box-shadow: 0px 0px 25px#92A4D2;
+    width:205px; height: 405px;
+}
+
+.dua{
+    box-shadow:0px 0px 5px #90CDE0;
+}
+.dua:hover{
+    box-shadow: 0px 0px 25px #90CDE0;
+    width:205px; height: 405px;
+}
+
+.tiga{
+    box-shadow:0px 0px 5px #F0CAFA;
+}
+.tiga:hover{
+    box-shadow: 0px 0px 25px#F0CAFA;
+    width:205px; height: 405px;
+}
+
+/*================== Contact ==============*/
+.contact{
+    margin: 200px 50px;
+}
+
+.kontak{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.kontak img{
+    width: 50%;
+    max-width: 300px;
+}
+
+/*================== Biodata =================*/
+.biodataa{
+    display: block;
+    padding: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: auto;
+    margin: 30px;
+    background-image: url("../image/bgbiodata.PNG");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+   
+.biodataa img{
+    display: flex;
+    width: 100%;
+    max-width: 400px;
+    margin: 50px 30px 50px 60px;
+}
+
+.biodataa h2{
+    text-align: center;
+    font-size: 50px;
+}
+
+.isibiodata{
+    display: flex;
+}
+.tabelbiodata{
+    flex-grow: 2;
+    margin: auto;
+    font-size: 25px;
+    margin: 100px 0px;
+}
+
+#content{
+    float: none;
+}
+
+.aside{
+    float: none;
+}
+
+/*================== footer =================*/
+ 
+footer {
+    padding: 50px;
+    color: white;
+    background-color: #92A4D2;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+ }
+ 
+
+/*  Responsif Max Width 1000px */
+
+@media screen and (max-width: 1000px) {
+    /* Bagian Beranda */
+    main .beranda{
+        margin-bottom: 300px;
+    }
+
+    main .beranda img{
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .hello{
+        font-size: 30px;
+        margin-top:30px;
+    }
+
+    .lutfhi{
+        font-size: 31px;
+    }
+    .fsd{
+        font-size: 20px;
+    }
+    .hello, .lutfhi, .fsd{
+        padding: 0px 20px;
+    }
+
+
+    /* Bagian About Me */
+    .about{
+        margin: auto;
+    }
+
+    .about h2{
+        font-size: 35px;
+        padding: 10px 30px 0px 30px;
+    }
+    
+    .justify{
+        font-size: 20px;
+        
+    }
+
+    /* Bagian Services */
+    article div figure{
+        width: 200px;
+        height: 300px;
+    }
+
+    article div figure img{
+        width: 100%;
+        max-width: 100px;
+    }
+
+
+    /* Bagian Contact */
+    .contact{
+        margin: 200px 20px;
+    }
+
+    .contact h2{
+        font-size: 35px;
+    }
+
+    .contact2{
+        padding:50px 50px;
+    }
+
+    .contact2 img{
+        padding: 20px 40px;
+    }
+    
+    /* Bagian Biodata */
+    .biodataa{
+        margin: 200px 20px;
+        padding: 50px;
+        background-size:100%;
+    }
+    .biodataa h2{
+        font-size: 35px;
+    }
+
+    .isibiodata{
+        font-size: 10px;
+        margin: auto;
+    }
+
+    .isibiodata img{
+        margin:auto;
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    /* Bagian Footer */
+    footer{
+        font-size: 15px;
+    }
+ }
+
+/*  Responsif Max Width 700px */ 
+
+@media screen and (max-width: 700px) {
+
+    /* Bagian Beranda */
+    div .beranda{
+        padding: 50px;
+        margin: 100px 20px;
+    }
+    .hello{
+        font-size: 20px;
+        margin-top:30px;
+    }
+
+    .lutfhi{
+        font-size: 25px;
+    }
+    .fsd{
+        font-size: 15px;
+    }
+    .hello, .lutfhi, .fsd{
+        padding: 0px;
+    }
+    
+    /* Bagian About Me */
+    .about{
+        background-size: 100%;
+    }
+
+    /* Bagian Services */
+
+    .services{
+        margin: 200px 10px;
+    }
+    .servicesbox{
+        font-size: 15px;
+        padding: 20px;
+    }
+
+    }
+    .services h2{
+        font-size: 35px;
+    }
+ }
